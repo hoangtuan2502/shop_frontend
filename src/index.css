@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-btn-primary {
+  color: #fff;
+  background: #ff821b;
+  box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+}
+
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+  color: #fff;
+  background: #f4a462;
+}
+
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-input-outlined:focus, :where(.css-dev-only-do-not-override-1ae8k9u).ant-input-outlined:focus-within {
+  border-color: #f4a462;
+  box-shadow: 0 0 0 2px rgba(244, 232, 68, 0.1);
+  outline: 0;
+  background-color: #ffffff;
+}
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-card .ant-card-body {
+  padding: 0;
+  border-radius: 0 0 8px 8px;
+}
+

@@ -1,0 +1,51 @@
+
+.card {
+    .ant-card-body {
+        padding: 0 !important;
+    }
+    .container {
+        padding: 8px;
+        .rate {
+            margin-top: 12px;
+            font-size: 12px;
+            color: yellow;
+        }
+        .rate_count {
+            margin-left: 2.5px;
+            color: black;
+
+        }
+        .price {
+            font-size: 16px;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            .old_price {
+                color: rgba(0, 0, 0, .54);
+                text-decoration: line-through;
+                margin-right: 5px;
+            }
+            .current_price {
+                color: #ee4d2d;
+            }
+
+        }
+        .address {
+            margin-top:5px;
+            color: rgba(0, 0, 0, .65);
+            font-size: 12px;
+            min-height: 10px;
+            text-align: left;
+        }
+    }
+    .product_name {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        height: 28px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+}
