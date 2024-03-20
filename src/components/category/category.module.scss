@@ -2,4 +2,11 @@
     width: 100%;
     object-fit: contain;
     cursor: pointer;
+    border-radius: 8px;
+}
+.card {
+    &:hover {
+        border: 1px solid rgb(245, 99, 50);
+        transition: all linear 0.25s;
+    }
 }

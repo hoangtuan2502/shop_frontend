@@ -1,4 +1,74 @@
+.product_item {
+    position: relative;
 
+    .product__item_label_sale {
+        position: absolute;
+        background-color: rgb(245, 99, 50);
+        top: 10px;
+        left: -4px;
+        padding-right:6px ;
+        line-height: 16px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        z-index: 999;
+
+        span {
+            font-size: 12px;
+            color: #fff;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 0px;
+            border-top: 3px solid rgb(245, 99, 50);
+            border-left: 3px solid transparent;
+            filter:saturate(60%);
+        }
+    }
+    .product__item_percent_sale {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 36px;
+        height: 34px;
+        background-color: rgba(255,216,57,0.93);
+        text-align: center;
+        z-index: 999;
+        p {
+            margin: 0;
+        }
+        .sale__percent {
+            padding-top: 3px;
+            color: #ee652d;
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 600;
+        }
+        .sale__text {
+            color: #fff;
+            font-size: 12px;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            border-bottom: 4px solid transparent;
+            border-left: 18px solid rgba(255,216,57,0.93);
+            top: 100%;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            right: 0;
+            border-bottom: 4px solid transparent;
+            border-right: 18px solid rgba(255,216,57,0.93);
+            top: 100%;
+        }
+    }
+    
+
+}
 .card {
     .ant-card-body {
         padding: 0 !important;

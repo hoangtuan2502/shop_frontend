@@ -3,6 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+  
+} 
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(117deg,#af0a78,#5a035a 102%);
+  border-radius: 2px;
+}
+body::-webkit-scrollbar-track {
+ border-radius: 2px;
+ background-color: rgb(214, 223, 141);
+}
 
 ul, ol {
   list-style: none;
@@ -10,6 +26,11 @@ ul, ol {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.container_component {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 :where(.css-dev-only-do-not-override-1ae8k9u).ant-btn-primary {

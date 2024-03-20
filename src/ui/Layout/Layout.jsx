@@ -5,6 +5,9 @@ import MySlider from '../../components/slider/Slider';
 import Category from '../../components/category/Category';
 import ListProduct from '../../components/ListProduct/ListProduct';
 import MyPagination from '../pagination/MyPagination';
+import FlashSale from '../../components/flashSale/FlashSale';
+import MyFooter from '../../components/myFooter/MyFooter';
+import ProductDetail from '../../components/productDetail/ProductDetail';
 
 const { Header, Content, Footer } = Layout;
 const items = new Array(3).fill(null).map((_, index) => ({
@@ -18,7 +21,7 @@ const MyLayout = () => {
   return (
     <Layout>
       <MyHeader />
-      <MySlider />
+      {/* <MySlider /> */}
       <Content
         style={{
           padding: '0 48px',
@@ -34,11 +37,16 @@ const MyLayout = () => {
             borderRadius: borderRadiusLG,
           }}
         >
-          <Category />
-          <ListProduct />
-          <MyPagination />
+          {/* <Category />
+          <FlashSale />
+          <ListProduct title={"SẢN PHẨM BÁN CHẠY"}/>
+          <ListProduct title={"GỢI Ý HÔM NAY"}/>
+           */}
+          {/* <MyPagination /> */}
+          <ProductDetail/>
         </div>
       </Content>
+      <MyFooter />
       <Footer
         style={{
           textAlign: 'center',

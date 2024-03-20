@@ -2,12 +2,15 @@ import React from 'react';
 import { Card, List } from 'antd';
 import { Typography } from 'antd';
 import Product from '../Product/Product';
+import { Flex } from 'antd';
 
 const { Title } = Typography;
-const ListProduct = () => {
+const ListProduct = ({title}) => {
     return (
-        <>
-            <Title level={4} style={{ color: '#d0011b' }}>Danh sách sản phẩm</Title>
+        <div className='container_component'>
+            <Flex justify='center'>
+                <Title level={4} style={{ color: '#d0011b', fontWeight: 600 }}>{title}</Title>
+            </Flex>
             <List
                 grid={{
                     gutter: 16,
@@ -18,9 +21,21 @@ const ListProduct = () => {
                     xl: 5,
                     xxl: 5
                 }}
-                dataSource={[1, 2, 3, 4, 5,6,7,8,9,10]}
+                pagination={{
+                    onChange: (page) => {
+                        console.log('page', page);
+                    },
+                    pageSize: 10,
+                    total:100,
+                    position: 'bottom',
+                    align: 'center',
+                    onShowSizeChange: (current, size) => {
+                        console.log({current, size});
+                    }
+                }}
+                dataSource={[1, 2, 3, 4, 5,6,7,8,9,10,1,5,6,7,8,9,10]}
                 renderItem={(item) => {
-                    console.log('item', item);
+                    
                     return (
                         <List.Item>
                             <Product />
@@ -28,7 +43,7 @@ const ListProduct = () => {
                     )
                 }}
             />
-        </>
+        </div>
     )
 }
 

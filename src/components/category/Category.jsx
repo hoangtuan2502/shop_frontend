@@ -41,10 +41,9 @@ const Category = () => (
             }}
             dataSource={data}
             renderItem={(item) => {
-                console.log('item', item);
                 return (
                     <List.Item>
-                        <Card  > 
+                        <Card className={styles.card}> 
                             <img className={styles.category_img} src={item.src} alt="" />
                         </Card>
                     </List.Item>

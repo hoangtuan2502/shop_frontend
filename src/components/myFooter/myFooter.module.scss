@@ -1,0 +1,31 @@
+.footer {
+    padding: 18px 48px;
+    // background-color: rgba(0, 0, 0, 0.055);
+    /* border: 10px solid red; */
+    border-top: 4px solid #EE4d2d;
+    margin-top: 40px;
+    background-color: #fff;
+    .box_col {
+        text-align: left;
+        .head_footer {
+            font-size: 12px;
+            font-weight: 600;
+            color: gray;
+            margin:20px 0; 
+        }
+        .support_item {
+            margin: 0 0 12px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            color: gray;
+            cursor: pointer;
+            &:hover {
+                color: rgb(245, 99, 50);
+            }
+            
+        }
+    }
+    
+}
+
