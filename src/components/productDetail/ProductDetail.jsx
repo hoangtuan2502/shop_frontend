@@ -63,7 +63,7 @@ const ProductDetail = () => {
                 <div className={styles.right}>
                     <Title level={4}>Điện thoại Apple iPhone 15 Pro 128GB</Title>
                     <Row>
-                        <Col flex={}>
+                        <Col >
                         </Col>
                     </Row>
                 </div>
